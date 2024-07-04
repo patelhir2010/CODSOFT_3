@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input type="text" id="result" readonly>
+    <table>
+        <tr>
+            <td><button value="7" onclick="appendValue(this.value)">7</button></td>
+            <td><button value="8" onclick="appendValue(this.value)">8</button></td>
+            <td><button value="9" onclick="appendValue(this.value)">9</button></td>
+            <td><button value="/" onclick="appendValue(this.value)">/</button></td>
+        </tr>
+        <tr>
+            <td><button value="4" onclick="appendValue(this.value)">4</button></td>
+            <td><button value="5" onclick="appendValue(this.value)">5</button></td>
+            <td><button value="6" onclick="appendValue(this.value)">6</button></td>
+            <td><button value="*" onclick="appendValue(this.value)">*</button></td>
+        </tr>
+        <tr>
+            <td><button value="1" onclick="appendValue(this.value)">1</button></td>
+            <td><button value="2" onclick="appendValue(this.value)">2</button></td>
+            <td><button value="3" onclick="appendValue(this.value)">3</button></td>
+            <td><button value="-" onclick="appendValue(this.value)">-</button></td>
+        </tr>
+        <tr>
+            <td><button value="0" onclick="appendValue(this.value)">0</button></td>
+            <td><button value="C" onclick="clearResult()">C</button></td>
+            <td><button value="=" onclick="calculateResult()">=</button></td>
+            <td><button value="+" onclick="appendValue(this.value)">+</button></td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
